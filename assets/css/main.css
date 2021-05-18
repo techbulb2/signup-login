@@ -7,6 +7,7 @@
 :root {
     --color-primary: #111;
     --color-secondary: #333;
+    --color-tertiary-1: #fff;
 
     --box-shadow-1: 0 1rem 2rem rgba(0,0,0,.8);
 
@@ -50,7 +51,7 @@ body {
     border: 2px solid transparent;
 
     background-color: black;
-    color: white;
+    color: var(--color-tertiary-1);
 }
 
 .form-container input:focus {
@@ -67,12 +68,12 @@ body {
     font-weight: bold;
     border-radius: var(--border-radius-1);
     background-color: black;
-    color: white;
+    color: var(--color-tertiary-1);
 }
 
 .login + p {
     margin-top: 2rem;
     font-size: 2rem;
-    color: white;
+    color: var(--color-tertiary-1);
 }
 
