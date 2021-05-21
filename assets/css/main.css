@@ -36,26 +36,33 @@ body {
 }
 
 .form-group {
+    position: relative;
+    padding: .5rem;
     margin-bottom: 2rem;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-1);
 }
 
 .form-container input {
-    display: block;
-    width: 100%;
+    /*display: block;
+    width: 100%;*/
     height: 2rem;
     padding: 2rem;
+    margin-left: 2rem;
     font-size: 1.6rem;
     font-weight: bold;
     outline: none;
-    border-radius: var(--border-radius-1);
+    border: none;
+    background-color: transparent;
+    /*border-radius: var(--border-radius-1);
     border: 2px solid transparent;
 
-    background-color: black;
+    /*background-color: black;*/
     color: var(--color-tertiary-1);
 }
 
 .form-container input:focus {
-    border: 2px solid #000;
+    /*outline: 2px solid #000;*/
 }
 
 .login button {
@@ -67,7 +74,7 @@ body {
     cursor: pointer;
     font-weight: bold;
     border-radius: var(--border-radius-1);
-    background-color: black;
+    background-color: var(--color-primary);
     color: var(--color-tertiary-1);
 }
 
@@ -75,5 +82,16 @@ body {
     margin-top: 2rem;
     font-size: 2rem;
     color: var(--color-tertiary-1);
+}
+
+.icon {
+    position: absolute;
+    top: 9px;
+    height: 3rem;
+    color: white;
+}
+
+.icon, .form-conatainer input {
+    display: inline-block;
 }
 
