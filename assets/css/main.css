@@ -22,12 +22,27 @@ body {
     background-color: var(--color-primary);
 }
 
-.form-container {
-    max-width: 40rem;
-    margin: 10rem auto;
+.form-heading-secondary {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    color: var(--color-secondary);
+
+    /* linear gradient */
+    background-image: linear-gradient(to left, var(--color-secondary), var(--color-tertiary-1));
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .login {
+    max-width: 40rem;
+    margin: 0 auto;
     padding: 2rem;
     border-radius: var(--border-radius-1);
     width: 100%;
@@ -61,10 +76,6 @@ body {
     color: var(--color-tertiary-1);
 }
 
-.form-container input:focus {
-    /*outline: 2px solid #000;*/
-}
-
 .login button {
     display: block;
     outline: none;
@@ -79,6 +90,7 @@ body {
 }
 
 .login + p {
+    text-align: center;
     margin-top: 2rem;
     font-size: 2rem;
     color: var(--color-tertiary-1);
@@ -88,6 +100,10 @@ body {
     position: absolute;
     top: 9px;
     height: 3rem;
+}
+
+.icon-eye {
+    right: 9px;
     color: white;
 }
 
@@ -95,3 +111,22 @@ body {
     display: inline-block;
 }
 
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.form-container, .illustration {
+    width: 50%;
+    float: left;
+}
+
+.illustration {
+    height: 100vh;
+}
+
+.illustration-img-1 {
+    width: 100%;
+    height: 100%;
+}

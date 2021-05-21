@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Simple login form</title>
 </head>
-<body>
+<body class="clearfix">
     <div class="form-container">
+        <div class="form-heading-secondary">
+            <h1>Log in</h1>
+        </div>
         <form class="login">
             <div class="form-group">
                 <img src="assets/images/user.svg" class="icon" />
@@ -17,14 +20,18 @@
             <div class="form-group">
                 <img src="assets/images/lock.svg" class="icon" />
                 <input type="password" name="password" id="password" placeholder="Password...">
-                <img src="assets/images/eye.svg" class="icon" />
+                <!--<img src="assets/images/eye.svg" class="icon icon-eye" />-->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icon icon-eye">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
             </div>
             <button type="submit">sign in</button>
         </form>
         <p>Not a member? <a href="signup.html">sign up</a></p>
     </div>
     <div class="illustration">
-        <img src="assets/images/user-illustration.png" />
+        <img class="illustration-img-1" src="assets/images/user-illustration.png" />
     </div>
 </body>
 </html>
